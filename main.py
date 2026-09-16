@@ -33,6 +33,8 @@ from config import MASK_DIR
 
 app = FastAPI(title="OncoMorph 4D Backend")
 
+BASE_DIR = Path(__file__).resolve().parent
+
 REACT_UI_DIR = BASE_DIR / "frontend-brain2" / "dist"
 if (REACT_UI_DIR / "assets").exists():
     app.mount("/brain2/assets", StaticFiles(directory=str(REACT_UI_DIR / "assets")), name="brain2-assets")
