@@ -1,0 +1,50 @@
+# ==========================================
+# Python & Backend
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# ==========================================
+# Node.js & Frontend (React/Vite)
+# ==========================================
+node_modules/
+frontend-brain2/node_modules/
+frontend-brain2/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# Project Specific: Scans & Generated Data
+# ==========================================
+# Ignore upload and processing directories to prevent massive repo sizes
+raw_data/
+uploads/
+generated/
+data/
+
+# ==========================================
+# Large ML Models & 3D/Medical Files
+# ==========================================
+# You should use Git LFS for these if you absolutely must track them
+*.pt
+*.pth
+*.nii
+*.nii.gz
+*.glb
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
